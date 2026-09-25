@@ -1,0 +1,122 @@
+backend:
+  name: github
+  repo: TON-USERNAME/TON-REPO
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "projects"
+    label: "Projets"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+
+      - label: "Nom du projet"
+        name: "title"
+        widget: "string"
+
+      - label: "Localisation"
+        name: "location"
+        widget: "string"
+
+      - label: "Ville"
+        name: "city"
+        widget: "string"
+
+      - label: "Type"
+        name: "type"
+        widget: "string"
+
+      - label: "Superficie"
+        name: "area"
+        widget: "string"
+        required: false
+
+      - label: "Statut"
+        name: "status"
+        widget: "string"
+
+      - label: "Image principale"
+        name: "main_image"
+        widget: "image"
+
+      - label: "Description"
+        name: "description"
+        widget: "text"
+
+      - label: "Logements"
+        name: "residences"
+        widget: "list"
+        fields:
+
+          - label: "Type"
+            name: "type"
+            widget: "string"
+
+          - label: "Superficie"
+            name: "area"
+            widget: "string"
+            required: false
+
+          - label: "Description"
+            name: "description"
+            widget: "text"
+
+      - label: "Services du logement"
+        name: "housing_services"
+        widget: "list"
+        fields:
+
+          - label: "Nom"
+            name: "title"
+            widget: "string"
+
+          - label: "Description"
+            name: "description"
+            widget: "text"
+
+      - label: "Services de la résidence"
+        name: "residence_services"
+        widget: "list"
+        fields:
+
+          - label: "Nom"
+            name: "title"
+            widget: "string"
+
+          - label: "Description"
+            name: "description"
+            widget: "text"
+
+      - label: "Plans"
+        name: "plans"
+        widget: "list"
+        fields:
+
+          - label: "Nom"
+            name: "title"
+            widget: "string"
+
+          - label: "Image"
+            name: "image"
+            widget: "image"
+
+      - label: "Galerie"
+        name: "gallery"
+        widget: "list"
+        field:
+          label: "Image"
+          name: "image"
+          widget: "image"
+
+      - label: "Adresse"
+        name: "address"
+        widget: "string"
+
+      - label: "Lien Google Maps"
+        name: "map_url"
+        widget: "string"
+        required: false
