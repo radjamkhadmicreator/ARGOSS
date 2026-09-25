@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: TON-USERNAME/TON-REPO
+  repo: radjamkhadmicreator/ARGOSS
   branch: main
 
 media_folder: "images"
