@@ -1,10 +1,10 @@
 backend:
-  name: github
-  repo: radjamkhadmicreator/ARGOSS
+  name: turbo-github
+  turbo_site_id: 641b6604-4bca-48c0-8dc3-8d0eb0cd5e57
   branch: main
 
-media_folder: "images"
-public_folder: "/images"
+media_folder: "content/projects/images"
+public_folder: "/content/projects/images"
 
 collections:
   - name: "projects"
@@ -107,10 +107,11 @@ collections:
       - label: "Galerie"
         name: "gallery"
         widget: "list"
-        field:
-          label: "Image"
-          name: "image"
-          widget: "image"
+        fields:
+
+          - label: "Image"
+            name: "image"
+            widget: "image"
 
       - label: "Adresse"
         name: "address"
